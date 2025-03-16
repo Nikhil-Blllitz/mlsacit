@@ -70,7 +70,7 @@ const Second = () => {
             />
             {/* <div className="absolute inset-0 pl-5 flex z-0 text-white text-[1.5vw] font-bold font-[LM] bg-yellow-500"> */}
               <h1 className="absolute inset-0 text-[1.2vw] font-semibold p-[2vw] h-full w-full text-white max-sm:p-[10vw] max-sm:text-[3vw]" data-aos="zoom-out">
-              Founded in 2020, MLSA CIT began with a single Alpha Microsoft Learn Student Ambassador, laying the foundation for a thriving tech-driven initiative.
+              Founded in 2023, MLSA CIT began with a single Alpha Microsoft Learn Student Ambassador, laying the foundation for a thriving tech-driven initiative.
               </h1>
             {/* </div> */}
           </div>
@@ -98,7 +98,7 @@ const Second = () => {
               data-aos="slide-right"
             />
             <h1 className="absolute inset-0 text-[1.2vw] font-semibold p-[2vw] h-full w-full max-sm:p-[10vw] max-sm:text-[3vw] text-black" data-aos="zoom-out">
-            Now in its third generation of leaders, MLSA CIT stands stronger than ever, successfully conducting impactful workshops and learning initiatives—driven by the commitment to push boundaries and shape the future of tech.
+            Now in its second generation of leaders, MLSA CIT stands stronger than ever, successfully conducting impactful workshops and learning initiatives—driven by the commitment to push boundaries and shape the future of tech.
               </h1>
           </div>
 

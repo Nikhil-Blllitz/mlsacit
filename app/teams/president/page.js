@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -15,16 +14,16 @@ const Page = () => {
       duration: 1000,
       once: true,
     });
+    AOS.refresh(); // Ensure animations refresh dynamically
   }, []);
 
   return (
     <div className="relative min-h-screen w-full bg-gradient-to-b from-[#020084] to-[#000149] flex flex-col items-center py-16 px-4 overflow-hidden">
+      
       {/* Back Button */}
       <button
-        onClick={() => {
-          console.log("Navigating to /");
-          router.back();
-        }}
+        onClick={() => router.back()}
+        aria-label="Go Back"
         className="absolute top-8 left-8 z-10 px-4 py-2 bg-gradient-to-r from-blue-400 to-purple-400 text-black font-semibold rounded-lg shadow-md hover:bg-gray-400 transition-all font-[Excon]"
         data-aos="fade-left"
       >
@@ -33,8 +32,7 @@ const Page = () => {
 
       {/* Background Vector */}
       <div
-        className="absolute inset-0 w-full h-full bg-center  max-sm:bg-contain lg:bg-cover z-0"
-        style={{ backgroundImage: "url('/Background.svg')" }}
+        className="absolute inset-0 w-full h-full bg-center max-sm:bg-contain lg:bg-cover z-0 bg-[url('/Background.svg')]"
         data-aos="fade-up"
       ></div>
 
@@ -43,26 +41,21 @@ const Page = () => {
         className="relative mt-16 rounded-lg bg-gray-800/30 backdrop-blur-sm border border-white/10 p-7 shadow-2xl"
         data-aos="zoom-in"
       >
-        <h2
-          className="text-4xl font-bold font-[Excon] text-center mb-10 text-white"
-          data-aos="fade-down"
-        >
+        <h2 className="text-4xl font-bold text-center mb-10 text-white font-[Excon]" data-aos="fade-down">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
             Meet Our President
           </span>
         </h2>
 
         {/* Profile Image */}
-        <div
-          className="w-auto h-auto flex justify-center items-center mx-auto mb-6"
-          data-aos="flip-left"
-        >
+        <div className="w-auto h-auto flex justify-center items-center mx-auto mb-6" data-aos="flip-left">
           <Image
             src="/images/individual pics/dilip b.png"
             alt="President Image"
             width={228}
             height={228}
-            className="rounded-full object-cover "
+            priority
+            className="rounded-full object-cover"
           />
         </div>
 
@@ -76,20 +69,8 @@ const Page = () => {
         <div className="mb-6" data-aos="fade-left">
           <h2 className="text-2xl font-semibold text-blue-400 mb-4 font-[Khand]">Biography</h2>
           <p className="text-white leading-7 font-[GMVF]">
-          Since assuming the role in September 2024, Dilip B has embodied visionary leadership. As a beta MLSA, his unwavering commitment to turning ambitions into achievements has not only inspired but also elevated our community, driving us to new heights of excellence and collaboration.
+            Since assuming the role in September 2024, Dilip B has embodied visionary leadership. As a beta MLSA, his unwavering commitment to turning ambitions into achievements has not only inspired but also elevated our community, driving us to new heights of excellence and collaboration.
           </p>
-        </div>
-
-        {/* Contributions */}
-        <div className="mb-6" data-aos="fade-right">
-          <h2 className="text-2xl font-semibold text-blue-400 mb-4 font-[Khand]">
-            Contributions to the Club
-          </h2>
-          <ul className="list-disc list-inside space-y-3 text-white font-[GMVF]">
-            <li>Guided the club to achieve its mission and vision.</li>
-            <li>Organized successful events and mentorship programs.</li>
-            <li>Supported club members with professional advice.</li>
-          </ul>
         </div>
 
         {/* Social Links */}

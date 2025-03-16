@@ -54,3 +54,87 @@ const Footer = () => {
 }
 
 export default Footer
+
+// "use client";
+// import React from "react";
+// import Link from "next/link";
+// import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+
+// const Footer = () => {
+//   const currentYear = new Date().getFullYear();
+//   return (
+//     <footer className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-8">
+//       <div className="container mx-auto px-4">
+//         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+//           {/* Left Section: Logo and Inspiring Text */}
+//           <div className="text-center md:text-left">
+//             <img
+//               src="/msc-logo.png"
+//               alt="MSC Logo"
+//               className="w-32 mx-auto md:mx-0 mb-4"
+//             />
+//             <p className="text-gray-300">
+//               WE ENCOURAGE YOUNG MINDS TO
+//               <br />
+//               PURSUE KNOWLEDGE AND EXCELLENCE
+//               <br />
+//               IN UNIQUE WAYS
+//             </p>
+//           </div>
+
+//           {/* Center Section: Social Icons */}
+//           <div className="flex justify-center items-center space-x-6">
+//             <a
+//               href="https://github.com/your-repo"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="text-white hover:text-gray-300 transition duration-300 hover:scale-110"
+//             >
+//               <FaGithub size={30} />
+//             </a>
+//             <a
+//               href="https://www.linkedin.com/company/microsoft-student-club-citech/"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="text-white hover:text-gray-300 transition duration-300 hover:scale-110"
+//             >
+//               <FaLinkedin size={30} />
+//             </a>
+//             <a
+//               href="https://www.instagram.com/msclub_cit?igsh=ajhqcWJoN3VnNGRw"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="text-white hover:text-gray-300 transition duration-300 hover:scale-110"
+//             >
+//               <FaInstagram size={30} />
+//             </a>
+//           </div>
+
+//           {/* Right Section: Navigation Links */}
+//           <div className="text-center md:text-right">
+//             <Link
+//               href="/events"
+//               className="block mb-2 text-white hover:text-gray-300"
+//             >
+//               Events
+//             </Link>
+//             <Link href="/team" className="block text-white hover:text-gray-300">
+//               Team
+//             </Link>
+//           </div>
+//         </div>
+
+//         {/* Bottom Section: Address and Additional Details */}
+//         <div className="mt-8 text-center text-gray-400">
+//           <p>Visit us at Cambridge Institute of Technology, KR Puram, Bengaluru</p>
+//           <p>2024 MLSA KIIT | DESIGNED BY MLSA CIT TEAM</p>
+//           <p className="mt-4">
+//             Copyright © {currentYear} MLSA, Cambridge Institute of Technology.
+//           </p>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// };
+
+// export default Footer;

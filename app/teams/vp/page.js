@@ -81,7 +81,7 @@ const Page = () => {
         </div>
 
         {/* Contributions */}
-        <div className="mb-6" data-aos="fade-right">
+        {/* <div className="mb-6" data-aos="fade-right">
           <h2 className="text-2xl font-semibold text-blue-400 mb-4 font-[Khand]">
             Contributions to the Club
           </h2>
@@ -90,7 +90,7 @@ const Page = () => {
             <li>Organized successful events and mentorship programs.</li>
             <li>Supported club members with professional advice.</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Social Links */}
         <div className="flex justify-center items-center gap-8 mt-8" data-aos="zoom-in-up">

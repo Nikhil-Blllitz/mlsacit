@@ -66,12 +66,13 @@ const AdvisorPage = () => {
         <div className="mb-6">
           <h2 className="text-2xl font-semibold text-blue-400 mb-4 font-[Khand]" data-aos="flip-down">Biography</h2>
           <p className="text-white leading-7 font-[GMVF]" data-aos="slide-down">
-          Megha Sharma, an esteemed assistant professor at our college, represents our club within the Microsoft community. Her unwavering dedication and invaluable insights drive our club to excel and innovate. With her mentorship, we are inspired to reach new heights, fostering an environment of growth and collaboration.
+          {/* Megha Sharma, an esteemed assistant professor at our college, represents our club within the Microsoft community. Her unwavering dedication and invaluable insights drive our club to excel and innovate. With her mentorship, we are inspired to reach new heights, fostering an environment of growth and collaboration. */}
+          An esteemed mentor and institutional liaison, she provides strategic guidance to align the chapter’s activities with industry trends. She bridges the gap between the chapter and the institution while ensuring high educational and professional standards in all initiatives. 
           </p>
         </div>
 
         {/* Contributions */}
-        <div className="mb-6">
+        {/* <div className="mb-6">
           <h2 className="text-2xl font-semibold text-blue-400 mb-4 font-[Khand]" data-aos="zoom-in-up">
             Contributions to the Club
           </h2>
@@ -80,7 +81,7 @@ const AdvisorPage = () => {
             <li>Coordinated successful events and mentorship programs.</li>
             <li>Provided professional guidance and support to club members.</li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Social Links */}
         <div className="flex justify-center items-center gap-8 mt-8" data-aos="flip-left">
